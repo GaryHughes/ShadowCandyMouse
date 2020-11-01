@@ -14,7 +14,7 @@ class ShadowTranslator
     public func englishToShadow(_ text: String) -> String
     {
         return text.map {
-            return dictionary.englishToShadow(String($0)) ?? String($0)
+            dictionary.englishToShadow(String($0)) ?? String($0)
         }.joined(separator: " ")
     }
     
@@ -30,8 +30,36 @@ class ShadowTranslator
         while let word = scanner.scanUpToCharacters(from: whitespaceAndPunctuationSet) {
             words.append(word)
         }
+    
+        let translateRange = { (start: Int, chunk: Int) -> String? in
+            let size = min(chunk, words.count - start)
+            let token = words[start ..< start + size].joined(separator: " ")
+            return self.dictionary.shadowToEnglish(token)
+        }
         
-        let letters = words.compactMap { dictionary.shadowToEnglish($0) }
+        var letters = [String]()
+        var index = 0
+        
+        while index < words.count {
+     
+            // Check for a 3 word token first eg. "MOUTH AND TONGUE"
+            if let translated = translateRange(index, 3) {
+                letters.append(translated)
+                index += 3
+                continue
+            }
+        
+            // Then check for a two word token eg. "FIZZY DRINK"
+            if let translated = translateRange(index, 2) {
+                letters.append(translated)
+                index += 2
+                continue
+            }
+            
+            // Then fallback to a single word
+            letters.append(dictionary.shadowToEnglish(words[index]) ?? words[index])
+            index += 1
+        }
         
         return letters.joined()
     }

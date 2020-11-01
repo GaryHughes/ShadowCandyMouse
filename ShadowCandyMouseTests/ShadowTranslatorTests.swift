@@ -37,5 +37,26 @@ class ShadowTranslatorTests: XCTestCase
         XCTAssertEqual(translator.shadowToEnglish("mountain people"), "HI")
     }
     
+    func testUnknownShadowTokens() throws
+    {
+        XCTAssertEqual(translator.shadowToEnglish("rhubarb"), "rhubarb")
+    }
+    
+    func testMultiwordTokens()
+    {
+        XCTAssertEqual(translator.shadowToEnglish("nut water"), "G")
+        XCTAssertEqual(translator.shadowToEnglish("fizzy drink"), "R")
+        XCTAssertEqual(translator.shadowToEnglish("bottle and nut"), "U")
+        XCTAssertEqual(translator.shadowToEnglish("icecream cone"), "V")
+        XCTAssertEqual(translator.shadowToEnglish("mouth and tongue"), "Y")
+    }
+    
+    func testMultiwordTokenBackAndForth()
+    {
+        let shadow = translator.englishToShadow("gut")
+        XCTAssertEqual(shadow, "NUT WATER BOTTLE AND NUT MOUSE")
+        let english = translator.shadowToEnglish(shadow)
+        XCTAssertEqual(english, "GUT")
+    }
 }
 
