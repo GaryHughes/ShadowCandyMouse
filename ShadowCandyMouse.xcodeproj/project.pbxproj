@@ -34,7 +34,7 @@
 		9A7E420F24F65FCD001D8305 /* ShadowDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDictionary.swift; sourceTree = "<group>"; };
 		9A7E421124F66C42001D8305 /* ShadowTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowTranslator.swift; sourceTree = "<group>"; };
 		9A7E421324F66CDD001D8305 /* ShadowTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowTranslatorTests.swift; sourceTree = "<group>"; };
-		9AE4C5C424CBC5980041F2CE /* ShadowCandyMouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowCandyMouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE4C5C424CBC5980041F2CE /* SCM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE4C5C724CBC5980041F2CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE4C5C924CBC5980041F2CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9AE4C5CC24CBC5980041F2CE /* ShadowCandyMouse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShadowCandyMouse.xcdatamodel; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		9AE4C5C524CBC5980041F2CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AE4C5C424CBC5980041F2CE /* ShadowCandyMouse.app */,
+				9AE4C5C424CBC5980041F2CE /* SCM.app */,
 				9AE4C5DD24CBC59B0041F2CE /* ShadowCandyMouseTests.xctest */,
 			);
 			name = Products;
@@ -136,7 +136,7 @@
 			);
 			name = ShadowCandyMouse;
 			productName = ShadowCandyMouse;
-			productReference = 9AE4C5C424CBC5980041F2CE /* ShadowCandyMouse.app */;
+			productReference = 9AE4C5C424CBC5980041F2CE /* SCM.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9AE4C5DC24CBC59B0041F2CE /* ShadowCandyMouseTests */ = {
@@ -388,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.geh.ShadowCandyMouse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SCM;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.geh.ShadowCandyMouse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SCM;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
