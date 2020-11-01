@@ -9,8 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
+        
+    @State private var shadow: String = "Shadow Candy Mouse"
+    @State private var english: String = "English"
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            TextField("Shadow", text: $shadow)
+            TextField("English", text: $english)
+        }
     }
 }
 

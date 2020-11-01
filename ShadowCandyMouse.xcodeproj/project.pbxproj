@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A7E421024F65FCD001D8305 /* ShadowDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E420F24F65FCD001D8305 /* ShadowDictionary.swift */; };
 		9AE4C5C824CBC5980041F2CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4C5C724CBC5980041F2CE /* AppDelegate.swift */; };
 		9AE4C5CA24CBC5980041F2CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4C5C924CBC5980041F2CE /* SceneDelegate.swift */; };
 		9AE4C5CD24CBC5980041F2CE /* ShadowCandyMouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4C5CB24CBC5980041F2CE /* ShadowCandyMouse.xcdatamodeld */; };
@@ -14,7 +15,7 @@
 		9AE4C5D124CBC59B0041F2CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE4C5D024CBC59B0041F2CE /* Assets.xcassets */; };
 		9AE4C5D424CBC59B0041F2CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE4C5D324CBC59B0041F2CE /* Preview Assets.xcassets */; };
 		9AE4C5D724CBC59B0041F2CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE4C5D524CBC59B0041F2CE /* LaunchScreen.storyboard */; };
-		9AE4C5E224CBC59B0041F2CE /* ShadowCandyMouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4C5E124CBC59B0041F2CE /* ShadowCandyMouseTests.swift */; };
+		9AE4C5E224CBC59B0041F2CE /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4C5E124CBC59B0041F2CE /* DictionaryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A7E420F24F65FCD001D8305 /* ShadowDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDictionary.swift; sourceTree = "<group>"; };
 		9AE4C5C424CBC5980041F2CE /* ShadowCandyMouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowCandyMouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE4C5C724CBC5980041F2CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE4C5C924CBC5980041F2CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +40,7 @@
 		9AE4C5D624CBC59B0041F2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AE4C5D824CBC59B0041F2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AE4C5DD24CBC59B0041F2CE /* ShadowCandyMouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShadowCandyMouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AE4C5E124CBC59B0041F2CE /* ShadowCandyMouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowCandyMouseTests.swift; sourceTree = "<group>"; };
+		9AE4C5E124CBC59B0041F2CE /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		9AE4C5E324CBC59B0041F2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				9AE4C5D824CBC59B0041F2CE /* Info.plist */,
 				9AE4C5CB24CBC5980041F2CE /* ShadowCandyMouse.xcdatamodeld */,
 				9AE4C5D224CBC59B0041F2CE /* Preview Content */,
+				9A7E420F24F65FCD001D8305 /* ShadowDictionary.swift */,
 			);
 			path = ShadowCandyMouse;
 			sourceTree = "<group>";
@@ -104,7 +107,7 @@
 		9AE4C5E024CBC59B0041F2CE /* ShadowCandyMouseTests */ = {
 			isa = PBXGroup;
 			children = (
-				9AE4C5E124CBC59B0041F2CE /* ShadowCandyMouseTests.swift */,
+				9AE4C5E124CBC59B0041F2CE /* DictionaryTests.swift */,
 				9AE4C5E324CBC59B0041F2CE /* Info.plist */,
 			);
 			path = ShadowCandyMouseTests;
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AE4C5CD24CBC5980041F2CE /* ShadowCandyMouse.xcdatamodeld in Sources */,
+				9A7E421024F65FCD001D8305 /* ShadowDictionary.swift in Sources */,
 				9AE4C5C824CBC5980041F2CE /* AppDelegate.swift in Sources */,
 				9AE4C5CF24CBC5980041F2CE /* ContentView.swift in Sources */,
 				9AE4C5CA24CBC5980041F2CE /* SceneDelegate.swift in Sources */,
@@ -222,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE4C5E224CBC59B0041F2CE /* ShadowCandyMouseTests.swift in Sources */,
+				9AE4C5E224CBC59B0041F2CE /* DictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
