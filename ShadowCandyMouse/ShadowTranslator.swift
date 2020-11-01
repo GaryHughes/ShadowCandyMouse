@@ -20,7 +20,20 @@ class ShadowTranslator
     
     public func shadowToEnglish(_ text: String) -> String
     {
-        return ""
+        var whitespaceAndPunctuationSet = CharacterSet.whitespacesAndNewlines
+        whitespaceAndPunctuationSet.formUnion(.punctuationCharacters)
+
+        let scanner = Scanner(string: text)
+        scanner.charactersToBeSkipped = whitespaceAndPunctuationSet
+
+        var words = [String]()
+        while let word = scanner.scanUpToCharacters(from: whitespaceAndPunctuationSet) {
+            words.append(word)
+        }
+        
+        let letters = words.compactMap { dictionary.shadowToEnglish($0) }
+        
+        return letters.joined()
     }
     
 }
