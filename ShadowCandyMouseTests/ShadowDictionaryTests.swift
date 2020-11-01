@@ -5,11 +5,10 @@
 //  Created by Gary Hughes on 25/7/20.
 //  Copyright © 2020 Gary Hughes. All rights reserved.
 //
-
 import XCTest
 @testable import ShadowCandyMouse
 
-class ShadowCandyMouseTests: XCTestCase {
+class ShadowDictionaryTests: XCTestCase {
 
     let dictionary = ShadowDictionary()
   

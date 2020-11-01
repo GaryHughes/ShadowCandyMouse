@@ -1,5 +1,5 @@
 //
-//  Dictionary.swift
+//  ShadowDictionary.swift
 //  ShadowCandyMouse
 //
 //  Created by Gary Hughes on 26/8/20.
